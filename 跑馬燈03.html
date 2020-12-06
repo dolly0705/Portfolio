@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  
+        <div id="myDiv" style="overflow:hidden;width:350;background-color:red;">
+        <table> <tr>
+        <td id="pic1">
+        <table>
+        <tr>
+        <td><img src="0.gif" style="border:1px solid;width:80;"></td>
+        <td><img src="1.gif" style="border:1px solid;width:80;"></td>
+        <td><img src="2.gif" style="border:1px solid;width:80;"></td>
+        <td><img src="3.gif" style="border:1px solid;width:80;"></td>
+        <td><img src="4.gif" style="border:1px solid;width:80;"></td>
+        <td><img src="5.gif" style="border:1px solid;width:80;"></td>
+        <td><img src="6.gif" style="border:1px solid;width:80;"></td>
+        <td><img src="7.gif" style="border:1px solid;width:80;"></td>
+        </tr>
+        </table>
+        </td>
+        <td id="pic2"></td>
+        </tr>
+        </table>
+        </div>
+        <script type="text/javascript">
+           
+            //變數Speed為設定捲軸的速度用 越小越快
+            var Speed=1;
+            //接受setInterval所回傳的值
+            var timer;
+            //取得myDiv的參考用的變數
+            var myDiv = document.getElementById("myDiv");
+            //取得pic2的參考用的變數
+            var pic2= document.getElementById("pic2");
+            //讓pic2的innerHTML等於pic1的innerHTML
+            pic2.innerHTML=document.getElementById("pic1").innerHTML;
+            //用來捲動myDiv捲軸用的主程式
+            function picMarquee(){
+            //若pic2的寬小於myDiv的scrollLeft，表示捲軸已經過了第一行
+            //所以讓Div的scrollLeft再回到原來的位置；反之 則繼續往右跑
+            if(pic2.offsetWidth - myDiv.scrollLeft <= 0){
+            myDiv.scrollLeft = 0;
+            }else{
+            myDiv.scrollLeft++;
+            }
+            }
+            //每Speed毫秒就執行一次pciMarquee()
+            timer=setInterval(picMarquee,Speed);
+            //當滑鼠在myDiv上時 就停止捲動
+            myDiv.onmouseover=function(){
+            clearInterval(timer);
+            }
+            //當滑鼠離開myDiv上時 就繼續往右捲動
+            myDiv.onmouseout=function(){
+            timer=setInterval(picMarquee,Speed);
+            }
+            //-->
+            </script>
+</body>
+
+</html>
