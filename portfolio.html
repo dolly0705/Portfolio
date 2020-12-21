@@ -12,6 +12,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="mylightbox/License_lightbox.css">
     <style>
 
 
@@ -20,13 +21,20 @@
 
 <body>
     <div class="container">
-        <div class="menu">
-            <img src="img/hamburger-06.png" alt="">
 
-            <a href="#Curriculum_Vitae" class="block01 menu_blocks">履歷</a>
-            <a href="#Web_Design" class="block02 menu_blocks">網站介紹</a>
-            <a href="#Art" class="block03 menu_blocks">美術作品</a>
-            <a href="#header" >
+        <div class="menu">
+            <img class="menu_icon" src="img/hamburger-06.png" alt="">
+
+            <a href="#Curriculum_Vitae" class=" menu_blocks">
+                <div class="block01"></div>履歷
+            </a>
+            <a href="#Web_Design" class=" menu_blocks">
+                <div class="block02"></div>網站介紹
+            </a>
+            <a href="#Art" class=" menu_blocks">
+                <div class="block03"></div>美術作品
+            </a>
+            <a href="#header">
                 <img id="menu_top" src="img/top02.png" alt="">
             </a>
             <a href="#footer">
@@ -39,12 +47,32 @@
                 PORTFOLIO
             </span>
         </div>
-        <div class="div1">
-            <img src="./img/HomePage/1.jpg" alt="" class="newop">
-            <img src="./img/HomePage/2.jpg" alt="" class="oldop">
-            <img src="./img/HomePage/3.jpg" alt="" class="oldop">
-            <img src="./img/HomePage/4.jpg" alt="" class="oldop">
-            <img src="./img/HomePage/5.jpg" alt="" class="oldop">
+        <div class="header_imgs div01">
+            <img src="./img/HomePage/1920/01.jpg" alt="" class="newop">
+            <img src="./img/HomePage/1920/02.jpg" alt="" class="oldop">
+            <img src="./img/HomePage/1920/03.jpg" alt="" class="oldop">
+            <img src="./img/HomePage/1920/04.jpg" alt="" class="oldop">
+
+        </div>
+        <div class="header_imgs div02">
+            <img src="./img/HomePage/1200/01.jpg" alt="" class="newop">
+            <img src="./img/HomePage/1200/02.jpg" alt="" class="oldop">
+            <img src="./img/HomePage/1200/03.jpg" alt="" class="oldop">
+            <img src="./img/HomePage/1200/04.jpg" alt="" class="oldop">
+
+        </div>
+        <div class="header_imgs div03">
+            <img src="./img/HomePage/768/01.jpg" alt="" class="newop">
+            <img src="./img/HomePage/768/02.jpg" alt="" class="oldop">
+            <img src="./img/HomePage/768/03.jpg" alt="" class="oldop">
+            <img src="./img/HomePage/768/04.jpg" alt="" class="oldop">
+
+        </div>
+        <div class="header_imgs div04">
+            <img src="./img/HomePage/360/01.jpg" alt="" class="newop">
+            <img src="./img/HomePage/360/02.jpg" alt="" class="oldop">
+            <img src="./img/HomePage/360/03.jpg" alt="" class="oldop">
+            <img src="./img/HomePage/360/04.jpg" alt="" class="oldop">
 
         </div>
         <div class="Curriculum_Vitae" id="Curriculum_Vitae">
@@ -55,14 +83,12 @@
                     <div class="CV_title_p"> 履歷</div>
 
                     <div class="CV_menu">
-                        <p>
-                            基本資料<br>
-                            應徵工作<br>
-                            工作經驗<br>
-                            技能專長<br>
-                            自傳
+                        <a href="#Basic">基本資料</a>
+                        <a href="#work">工作經驗</a>
+                        <a href="#Expertise">技能專長</a>
+                        <a href="#Resume">自傳</a>
 
-                        </p>
+
                     </div>
                 </div>
 
@@ -71,7 +97,7 @@
 
                 <div class="CV_container_top">
 
-                    <div class="Basic">
+                    <div class="Basic" id="Basic">
                         <div class="medium_title">基本資料</div>
                         <div class="yu_img">
 
@@ -124,7 +150,7 @@
 
                     </div>
 
-                    <div class="work">
+                    <div class="work" id="work">
                         <div class="medium_title">工作經歷</div>
                         <table class="table01">
                             <tr>
@@ -195,24 +221,40 @@
                 </div>
                 <!-- Swiper -->
                 <div class="swiper-container" id="CV_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
+                    <div class="swiper-wrapper cv-wrapper">
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+                        <div class="swiper-slide "></div>
+
                     </div>
 
                     <div class="swiper-pagination"></div>
                 </div>
+                <div class="cv_lightbox mylightbox">
+                    <span class="cv_close myclose">&times;</span>
+                    <div class="lightbox-content">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 10</div>
+                            <img class="myimg" id="cv_img" src="img/履歷/1.jpg" alt="">
+
+                        </div>
+
+                        <div class="cv_prev myprev">&#10094;</div>
+                        <div class="cv_next mynext">&#10095;</div>
+                    </div>
+
+                </div>
+
 
                 <div class="CV_container_bottom">
-                    <div class="Expertise">
+                    <div class="Expertise" id="Expertise">
                         <div class="medium_title">技能專長</div>
                         <p>跨平台RWD網頁切版<br>
                             HTML、CSS樣式實作<br>
@@ -270,18 +312,29 @@
 
                         <div class="swiper-container" id="License_swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
-                                <div class="swiper-slide"></div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/1.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/2.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/3.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/4.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/5.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/6.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/7.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/8.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/9.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/10.jpg);">
+                                </div>
+                                <div class="swiper-slide License_slide" style="background-image: url(img/證照/11.jpg);">
+                                </div>
+
 
                             </div>
 
@@ -290,9 +343,23 @@
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                         </div>
+                        <div class="License_lightbox mylightbox">
+                            <span class="License_close myclose">&times;</span>
+                            <div class="lightbox-content">
+                                <div class="mySlides">
+                                    <div class="numbertext License_numbertext">1 / 11</div>
+                                    <img class="myimg" id="License_img" src="img/證照/1.jpg" alt="">
+
+                                </div>
+
+                                <div class="License_prev myprev">&#10094;</div>
+                                <div class="License_next mynext">&#10095;</div>
+                            </div>
+
+                        </div>
 
                     </div>
-                    <div class="Resume">
+                    <div class="Resume" id="Resume">
                         <div class="medium_title">自傳</div>
                         <p class="Resume_p">
                             <b>【關於我】</b><br>
@@ -368,9 +435,9 @@
                             需設想RWD切版問題，繪製1920電腦版時考慮縮版動線，在此步驟我不一定會畫出手機板，除非版型與電腦版差異大</p>
                     </div>
                     <div class="common_imgs">
-                        <div class="draft_img01 common_img"></div>
-                        <div class="draft_img02 common_img"></div>
-
+                        <!-- <div class="draft_img01 common_img"></div> -->
+                        <a class="draft_img01 common_img" href="img/網站規劃/1.jpg" target="_blank"></a>
+                        <a class="draft_img02 common_img" href="img/網站規劃/2.jpg" target="_blank"></a>
 
                     </div>
                 </div>
@@ -382,9 +449,10 @@
                             繪製所有版型(本網站切三版1920、1200以下套用768、320)</p>
                     </div>
                     <div class="common_imgs" id="wireframe_imgs">
-                        <div class="common_img" id="wireframe_img"></div>
-                        <div class="common_img" id="wireframe_img"></div>
-                        <div class="common_img" id="wireframe_img"></div>
+                        <a class="common_img" id="wireframe_img" href="img/網站規劃/wireframe-1920.jpg" target="_blank"></a>
+                        <a class="common_img" id="wireframe_img" href="img/網站規劃/wireframe-768.jpg" target="_blank"></a>
+                        <a class="common_img" id="wireframe_img" href="img/網站規劃/wireframe-320.jpg" target="_blank"></a>
+
 
                     </div>
                 </div>
@@ -395,16 +463,16 @@
                         <p> 使用RGB色彩模式，撰寫程式的最後一步驟，須具備清楚的色彩內容、間距、字距、明確的長寬，並附上圖檔</p>
                     </div>
                     <div class="common_imgs" id="design_imgs">
-                        <div class="common_img" id="design_img"></div>
-                        <div class="common_img" id="design_img"></div>
-                        <div class="common_img" id="design_img"></div>
+                        <a class="common_img" id="design_img" href="img/網站規劃/1920.jpg" target="_blank"></a>
+                        <a class="common_img" id="design_img" href="img/網站規劃/768.jpg" target="_blank"></a>
+                        <a class="common_img" id="design_img" href="img/網站規劃/320.jpg" target="_blank"></a>
 
                     </div>
                 </div>
 
                 <div class="Program">
                     <div class="web_title">程式撰寫</div>
-                    <a href="https://docs.google.com/document/d/">https://docs.google.com/document/d/</a>
+                    <a href="https://github.com/dolly0705">https://github.com/dolly0705</a>
                 </div>
             </div>
         </div>
@@ -493,7 +561,8 @@
             </div>
             <div class="more block_common">
                 <div class="Art_titles">更多作品</div>
-                <div class="more_container">
+                <a href="https://drive.google.com/file/d/14QhSygNAl54yRnCCMzuOh1sB_-sP1VGO/view?usp=sharing" class="more_container" target="_blank">
+
                     <div class="more_boxes">
                         <img src="img/美術作品/05-else/01-05.png" alt="">
                         <p>星球Icon</p>
@@ -531,7 +600,7 @@
                         <p>動畫</p>
                     </div>
 
-                </div>
+                </a>
             </div>
         </div>
         <div class="footer" id="footer">
@@ -545,9 +614,11 @@
                     E-mail:kitty9328889@gmail.com
                 </p>
                 <div class="footer_icon">
-                    <img src="img/104.png" alt="">
-                    <img src="img/518.png" alt="">
-                    <img src="img/05.png" alt="">
+                    <a href="https://pda.104.com.tw/profile/edit?vno=75e8wbjlt" target="_blank"> <img src="img/104.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCt7xqbn7AePRItNNN67FffA" target="_blank"> <img src="img/youtube_PNG15.png" alt=""></a>
+                    <a href="https://github.com/dolly0705" target="_blank"> <img src="img/05.png" alt=""></a>
+ 
+                
                     <p>Copyright ©yojuan All Rights Reserved.</p>
                 </div>
             </div>
@@ -561,11 +632,14 @@
         <script src="/jquery/jquery-1.11.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="mylightbox/License_lightbox.js"></script>
+        <script src="mylightbox/cv_lightbox.js"></script>
+
 
         <script>
             var header = document.querySelector(".header");
             var yu = document.querySelector("#yu");
-            var div1 = document.querySelector(".div1");
+            var div1 = document.querySelector(".header_imgs");
             var img = document.querySelector("img");
 
 
@@ -588,13 +662,22 @@
             var scroll_top = 0; //先預設滾軸的高度是0
             var menu_top = document.querySelector("#menu_top")
             var menu_bottom = document.querySelector("#menu_bottom")
-            
+            var menu = document.querySelector(".menu")
+            var block01 = document.querySelector(".block01")
+            var block02 = document.querySelector(".block02")
+            var block03 = document.querySelector(".block03")
 
+
+            $(document).ready(function () {
+                $(".menu_icon").click(function () {
+                    $(".menu_blocks").slideToggle();
+                });
+            });
             //偵測螢幕是否正在滾動
             window.onscroll = function () {
                 scroll_top = window.scrollY //當螢幕滾動時 不斷偵測並更新目前滾軸的高度
                 console.log(scroll_top);
-                if (scroll_top > 9000) {
+                if (scroll_top > 9100) {
                     menu_top.style = "display:block"
                     menu_bottom.style = "display:none"
 
@@ -602,12 +685,57 @@
                     menu_top.style = "display:none"
                     menu_bottom.style = "display:block"
                 }
+                if (scroll_top < 500) {
+                    menu.style = " opacity:0;"
+                } else {
+                    menu.style = " opacity:1;"
+                }
+
+                var block_h = scroll_top / 55
+
+                if (scroll_top < 3800) {
+
+                    block01.style = "height: " + block_h + "px;"
+                    block02.style = "height: 0px;"
+                    block03.style = "height: 0px;"
+
+                } else if (scroll_top > 3800 && scroll_top < 4400) {
+                    block02.style = "height: 0px;"
+
+                } else if (scroll_top < 5490) {
+
+                    block01.style = "height: 100%;"
+                    var block_2h = (scroll_top - 4400) / 10
+                    block02.style = "height: " + block_2h + "px;"
+
+                } else if (scroll_top > 5490 && scroll_top < 6000) {
+                    block02.style = "height: 100%;"
+                    block03.style = "height: 0px;"
+
+                } else if (scroll_top < 9300) {
+                    block01.style = "height: 100%;"
+                    block02.style = "height: 100%;"
+
+                    var block_3h = (scroll_top - 6000) / 30;
+                    block03.style = "height: " + block_3h + "px;"
+
+                } else {
+                    block01.style = "height: 100%;"
+                    block02.style = "height: 100%;"
+                    block03.style = "height: 100%;"
+
+                }
+
             }
+
+
             ////////////////////////////////////////menu/////////////////////////////////////
 
-            var bolck1 = document.getElementsByClassName('div1')[0];
-            var bolck2 = document.getElementsByClassName('div2')[0];
+            var bolck1 = document.getElementsByClassName('header_imgs')[0];
+
             var time;
+
+
             for (var i = 0; i < bolck1.children.length; i++) {
                 bolck1.children[i].style.zIndex = bolck1.children.length - 1 - i;
                 // 即将每张图片按照从大到小排列，第一张图最先显示
@@ -646,7 +774,7 @@
                 slidesPerView: 3,//设置slider容器能够同时显示的slides数量 
 
                 speed: 1500,//滑动速度
-                spaceBetween: 30,//slide之间的距离（单位px）
+                spaceBetween: 20,//slide之间的距离（单位px）
                 freeMode: true,//默认为false，普通模式：slide滑动时只滑动一格，并自动贴合wrapper，设置为true则变为free模式，slide会根据惯性滑动且不会贴合。
                 pagination: {
                     el: '.swiper-pagination',
@@ -661,6 +789,46 @@
 
                 grabCursor: true,//设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。（根据浏览器形状有所不同）
             });
+            /////////////////////////////////////swiper//////////////////////////////////////
+
+            //////////////////////////////////box////////////////////////////////
+            // function openModal() {
+            //     document.getElementById("myModal").style.display = "block";
+            // }
+
+            // function closeModal() {
+            //     document.getElementById("myModal").style.display = "none";
+            // }
+
+
+            // var slideIndex = 1;
+            // showSlides(slideIndex);
+
+            // function plusSlides(n) {
+            //     showSlides(slideIndex += n);
+            // }
+
+            // function currentSlide(n) {
+            //     showSlides(slideIndex = n);
+            // }
+
+            // function showSlides(n) {
+            //     var i;
+            //     var slides = document.getElementsByClassName("mySlides");
+            //     var dots = document.getElementsByClassName("demo");
+            //     var captionText = document.getElementById("caption");
+            //     if (n > slides.length) { slideIndex = 1 }
+            //     if (n < 1) { slideIndex = slides.length }
+            //     for (i = 0; i < slides.length; i++) {
+            //         slides[i].style.display = "none";
+            //     }
+            //     for (i = 0; i < dots.length; i++) {
+            //         dots[i].className = dots[i].className.replace(" active", "");
+            //     }
+            //     slides[slideIndex - 1].style.display = "block";
+            //     dots[slideIndex - 1].className += " active";
+            //     captionText.innerHTML = dots[slideIndex - 1].alt;
+            // }
             /////////////////////////////////////swiper//////////////////////////////////////
 
             /////////////////////////////////////swiper02//////////////////////////////////////
@@ -694,6 +862,9 @@
                 Resume_p.style = "display: block;"
                 Resume_button.style = "display: none;"
             }
+
+
+
         </script>
 </body>
 

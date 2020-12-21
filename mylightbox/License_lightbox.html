@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="License_lightbox.css">
+</head>
+
+<body>
+    <div class="License_lightbox">
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 11</div>
+                <img src="../img/證照/1.jpg" alt="">
+
+            </div>
+
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </div>
+
+    </div>
+    <script>
+        var img = document.querySelector("img")
+        var prev = document.querySelector(".prev")
+        var next = document.querySelector(".next")
+        var numbertext = document.querySelector(".numbertext")
+
+
+        var n = 1;
+        prev.onclick = function () {
+            n--;
+            plusSubtract();
+
+        }
+        next.onclick = function () {
+            n++;
+            plusSubtract();
+        }
+        function plusSubtract() {
+            if (n < 1) {
+                n = n+11
+                numbertext.innerHTML = n + "/11";
+                img.src = "../img/證照/" + n + ".jpg"
+         
+            } else if (n > 11) {
+                n = n - 11;
+                numbertext.innerHTML = n + "/11";
+                img.src = "../img/證照/" + n + ".jpg"
+            
+            }
+            else {
+                img.src = "../img/證照/" + n + ".jpg"
+                console.log(n)
+                numbertext.innerHTML = n + "/11";
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>
