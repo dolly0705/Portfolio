@@ -305,32 +305,25 @@ html {
                             @media (max-width: 1200px) {
                                 align-items: center;
                             }
-                            @media (max-width: 600px) {
-                                align-items: flex-start;
-                                margin: 0px 10%;
-                            }
+                
 
                             .table01 {
-                                width: 520px;
+                                width: 540px;
 
                                 @media (max-width: 600px) {
                                     display: none;
                                 }
                             }
-                            .table02,
-                            .table03 {
+                            .table02{
                                 display: none;
                                 padding-bottom: 12px;
-
+                                width: 90vw;
+                                margin: auto;
                                 @media (max-width: 600px) {
                                     display: block;
                                 }
                             }
-                            .table03 {
-                                @media (max-width: 600px) {
-                                    padding-left: 55%;
-                                }
-                            }
+                      
                         }
                     }
                     .swiper-container {
@@ -694,7 +687,7 @@ html {
                         }
                     }
                     .map {
-                        width: 30vw;
+                        width:47vw;
                         margin: auto;
                         padding-bottom: 56px;
                         @media (max-width: 768px) {
@@ -1162,6 +1155,8 @@ html {
                             position: relative;
                             @media (max-width: 1200px) {
                                 margin: auto;
+                            height: 410px;
+
                             }
                             @media (max-width: 768px) {
                                 background-image: url(img/美術作品/03Poster/咖啡小圖示-01.png);
@@ -1169,7 +1164,7 @@ html {
                                 height: auto;
                             }
                             p {
-                                padding: 15% 15%;
+                                padding: 20% 15%;
                                 @media (max-width: 768px) {
                                     padding: 0% 15%;
                                 }

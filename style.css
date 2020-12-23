@@ -471,17 +471,8 @@ html body .container .Curriculum_Vitae .CV_container .CV_container_top .work {
   }
 }
 
-@media (max-width: 600px) {
-  html body .container .Curriculum_Vitae .CV_container .CV_container_top .work {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin: 0px 10%;
-  }
-}
-
 html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table01 {
-  width: 520px;
+  width: 540px;
 }
 
 @media (max-width: 600px) {
@@ -490,22 +481,16 @@ html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .ta
   }
 }
 
-html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table02,
-html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table03 {
+html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table02 {
   display: none;
   padding-bottom: 12px;
+  width: 90vw;
+  margin: auto;
 }
 
 @media (max-width: 600px) {
-  html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table02,
-  html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table03 {
+  html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table02 {
     display: block;
-  }
-}
-
-@media (max-width: 600px) {
-  html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table03 {
-    padding-left: 55%;
   }
 }
 
@@ -1016,7 +1001,7 @@ html body .container .Web_Design .Web_container .Process ol {
 }
 
 html body .container .Web_Design .Web_container .map {
-  width: 30vw;
+  width: 47vw;
   margin: auto;
   padding-bottom: 56px;
 }
@@ -1753,6 +1738,7 @@ html body .container .Art .Poster .Poster_container .Poster_else {
 @media (max-width: 1200px) {
   html body .container .Art .Poster .Poster_container .Poster_else {
     margin: auto;
+    height: 410px;
   }
 }
 
@@ -1765,7 +1751,7 @@ html body .container .Art .Poster .Poster_container .Poster_else {
 }
 
 html body .container .Art .Poster .Poster_container .Poster_else p {
-  padding: 15% 15%;
+  padding: 20% 15%;
 }
 
 @media (max-width: 768px) {

@@ -23,20 +23,20 @@ License_swiper.onclick = function () {
     }
     function plusSubtract() {
         if (n < 1) {
-            n = n + 11
-            License_numbertext.innerHTML = n + "/11";
+            n = n +10
+            License_numbertext.innerHTML = n + "/10";
             License_img.src = "img/證照/" + n + ".jpg";
 
-        } else if (n > 11) {
-            n = n - 11;
-            License_numbertext.innerHTML = n + "/11";
+        } else if (n > 10) {
+            n = n - 10;
+            License_numbertext.innerHTML = n + "/10";
             License_img.src = "img/證照/" + n + ".jpg";
 
         }
         else {
             License_img.src = "img/證照/" + n + ".jpg";
             console.log(n)
-            License_numbertext.innerHTML = n + "/11";
+            License_numbertext.innerHTML = n + "/10";
         }
     }
     License_close.onclick = function () {
