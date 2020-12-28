@@ -99,8 +99,15 @@ html {
                     }
                     #menu_top {
                         transform: rotate(180deg);
-                        display: none;
                         padding: 0px;
+                    }
+                    .displaYNone{
+                        display: none;
+
+                    }
+                    .displaYBlock{
+                        display: block;
+
                     }
                 }
             }
@@ -145,13 +152,13 @@ html {
                     opacity: 0;
                 }
             }
-            .div01 {
+            .maxsize {
                 display: flex;
                 @media (max-width: 1200px) {
                     display: none;
                 }
             }
-            .div02 {
+            .div1200{
                 display: none;
                 @media (max-width: 1200px) {
                     display: flex;
@@ -160,7 +167,7 @@ html {
                     display: none;
                 }
             }
-            .div03 {
+            .div768{
                 display: none;
                 @media (max-width: 768px) {
                     display: flex;
@@ -169,7 +176,7 @@ html {
                     display: none;
                 }
             }
-            .div04 {
+            .div360{
                 display: none;
                 @media (max-width: 360px) {
                     display: flex;
@@ -687,7 +694,7 @@ html {
                         }
                     }
                     .map {
-                        width:47vw;
+                        width:50vw;
                         margin: auto;
                         padding-bottom: 56px;
                         @media (max-width: 768px) {
@@ -1239,6 +1246,12 @@ html {
                         }
                         @media (max-width: 600px) {
                             width: 294px;
+                        }
+                        #annotation{
+                            font-size: 14px;
+                            color: rgba(0, 0, 0,0.7);
+                            padding-top: 16px;
+                            margin: auto;
                         }
                         .more_boxes {
                             width: 180px;

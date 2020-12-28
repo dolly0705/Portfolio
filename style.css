@@ -137,8 +137,15 @@ html body .container .menu a img {
 html body .container .menu a #menu_top {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  display: none;
   padding: 0px;
+}
+
+html body .container .menu a .displaYNone {
+  display: none;
+}
+
+html body .container .menu a .displaYBlock {
+  display: block;
 }
 
 html body .container .header {
@@ -192,24 +199,24 @@ html body .container .header_imgs .oldop {
   opacity: 0;
 }
 
-html body .container .div01 {
+html body .container .maxsize {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 1200px) {
-  html body .container .div01 {
+  html body .container .maxsize {
     display: none;
   }
 }
 
-html body .container .div02 {
+html body .container .div1200 {
   display: none;
 }
 
 @media (max-width: 1200px) {
-  html body .container .div02 {
+  html body .container .div1200 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,17 +224,17 @@ html body .container .div02 {
 }
 
 @media (max-width: 768px) {
-  html body .container .div02 {
+  html body .container .div1200 {
     display: none;
   }
 }
 
-html body .container .div03 {
+html body .container .div768 {
   display: none;
 }
 
 @media (max-width: 768px) {
-  html body .container .div03 {
+  html body .container .div768 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -235,17 +242,17 @@ html body .container .div03 {
 }
 
 @media (max-width: 360px) {
-  html body .container .div03 {
+  html body .container .div768 {
     display: none;
   }
 }
 
-html body .container .div04 {
+html body .container .div360 {
   display: none;
 }
 
 @media (max-width: 360px) {
-  html body .container .div04 {
+  html body .container .div360 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1001,7 +1008,7 @@ html body .container .Web_Design .Web_container .Process ol {
 }
 
 html body .container .Web_Design .Web_container .map {
-  width: 47vw;
+  width: 50vw;
   margin: auto;
   padding-bottom: 56px;
 }
@@ -1872,6 +1879,13 @@ html body .container .Art .more .more_container {
   html body .container .Art .more .more_container {
     width: 294px;
   }
+}
+
+html body .container .Art .more .more_container #annotation {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 16px;
+  margin: auto;
 }
 
 html body .container .Art .more .more_container .more_boxes {
