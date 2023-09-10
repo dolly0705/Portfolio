@@ -336,7 +336,7 @@ html {
                     .swiper-container {
                         width: 100%;
                         height: 25vw;
-
+                        overflow: hidden;
                         .swiper-wrapper {
                             .swiper-slide {
                                 text-align: center;
