@@ -98,7 +98,7 @@ html body .container .menu a:hover {
 }
 html body .container .menu a img {
   height: 50px;
-  width: 30px;
+  width: 10px;
   position: absolute;
   right: 0px;
 }
@@ -106,6 +106,10 @@ html body .container .menu a img {
   html body .container .menu a img {
     opacity: 0;
   }
+}
+html body .container .menu a img:hover {
+  height: 55px;
+  width: 12px;
 }
 html body .container .menu a #menu_top {
   transform: rotate(180deg);
