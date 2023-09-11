@@ -331,8 +331,8 @@ html body .container .Curriculum_Vitae .CV_container .CV_container_top .Basic .y
   }
 }
 html body .container .Curriculum_Vitae .CV_container .CV_container_top .Basic .yu_img img {
-  width: 180px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   padding-right: 24px;
 }
 @media (max-width: 600px) {
@@ -361,17 +361,6 @@ html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .ta
 @media (max-width: 600px) {
   html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table01 {
     display: none;
-  }
-}
-html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table02 {
-  display: none;
-  padding-bottom: 12px;
-  width: 90vw;
-  margin: auto;
-}
-@media (max-width: 600px) {
-  html body .container .Curriculum_Vitae .CV_container .CV_container_top .work .table02 {
-    display: block;
   }
 }
 html body .container .Curriculum_Vitae .CV_container .swiper-container {
